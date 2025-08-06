@@ -11,6 +11,9 @@ I believe that consistent practice beats perfection. This repo is a living journ
 🌱 Work in Progress
 This is not a portfolio — it’s proof of effort. Some projects may be messy. That’s the point. I’m showing up daily to improve.
 
+Categories
+- [JavaScript](https://github.com/codeharman/practice-zone/tree/main/JavaScript)
+
 🧠 Certificates?
 Check out my [certifications repo] (https://github.com/codeharman/certificates) if you're curious about the courses I've completed.
 
