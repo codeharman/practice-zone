@@ -4,6 +4,8 @@
 // je ai = I have
 // ans = years
 
+"use strict"; // Enables strict mode, which helps catch common coding errors 
+
 var harman
 harman = `je suis harman`
 console.log(harman);
@@ -39,4 +41,14 @@ if (memberDiscount) {
 console.log(`Regular discount is ${discount}`)
 // This 'discount' is not affected by the block-scoped variable above
 
+// Lesson on Template Literals in JavaScript
 
+let firstName = `Harmam`; // back ticks are used for template literals
+let age = 25;
+let greeting = `Hello, my name is ${firstName} and I am ${age}` // in order to use variables in a string, you can use ${variableName} inside back ticks
+console.log(greeting);
+
+// Template literals can also be used for multi-line strings
+let multiLineString = `This is a string
+that spans multiple lines.`;
+console.log(multiLineString);
