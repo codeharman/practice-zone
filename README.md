@@ -15,7 +15,7 @@ Categories
 - [JavaScript](https://github.com/codeharman/practice-zone/tree/main/JavaScript)
 
 🧠 Certificates?
-Check out my [certifications repo] (https://github.com/codeharman/certificates) if you're curious about the courses I've completed.
+Check out my [certifications repo](https://github.com/codeharman/certificates) if you're curious about the courses I've completed.
 
 💬 Feedback Welcome!
 If you have suggestions or tips, feel free to open an issue or message me. Let's build better together 🚀
