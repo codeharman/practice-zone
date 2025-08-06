@@ -25,3 +25,18 @@ console.log(count);
 
 const name = `harman`;
 console.log(name);
+
+// Blocking and scoping in JavaScript
+
+let discount = 5
+let memberDiscount = true;
+if (memberDiscount) {
+  const discount = 10;
+  // This 'discount' is block-scoped
+  console.log(`Member discount is ${discount}`);
+}
+
+console.log(`Regular discount is ${discount}`)
+// This 'discount' is not affected by the block-scoped variable above
+
+
