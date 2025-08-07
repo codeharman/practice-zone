@@ -1,5 +1,7 @@
 # I practiced here Variables & Strings
 
+## Variables and Strings
+
 - Variables basics with VAR
 - Better code with the strict mode
 - why use let and const over var
@@ -7,3 +9,5 @@
 - why block scoping matters
 - how template literals improve strings
 - how variables should be named
+
+## Types and Conditionals
