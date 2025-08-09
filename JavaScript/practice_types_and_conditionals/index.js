@@ -1,2 +1,1 @@
-// If statement is true or not
-
+// If statement is true or not, return true or false
