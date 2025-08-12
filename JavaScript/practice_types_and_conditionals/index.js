@@ -22,3 +22,18 @@ if (age) {
   console.log("harman is not an adult");
 }
 
+// I learned here switch case statement with default and break
+
+const day = "Wednesday"; // so when I change it to different weekdays that answer changes
+
+switch (day) {
+  case "Monday":
+    console.log("Mardi");
+    break;
+  case "Tuesday":
+    console.log("Mercredi");
+    break;
+    case "Wednesday":
+      console.log("Jeudi");
+}
+
