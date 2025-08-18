@@ -33,7 +33,15 @@ switch (day) {
   case "Tuesday":
     console.log("Mercredi");
     break;
-  default
-      console.log("Jeudi");
+  default:
+  console.log("Jeudi");
 }
+
+// if else but in ? short conditions with ternaries
+
+const harmanAge = true;
+
+const isHarmanAdult = harmanAge ? "Harman is an adult" : "Harman is not an adult";
+
+console.log(isHarmanAdult);
 
