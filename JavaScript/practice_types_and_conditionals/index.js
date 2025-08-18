@@ -45,3 +45,61 @@ const isHarmanAdult = harmanAge ? "Harman is an adult" : "Harman is not an adult
 
 console.log(isHarmanAdult);
 
+// the next thing today I learned is how to use the even shorter conditionals with the short-circuiting
+
+const french = "bonjour";
+
+const greeting = french || "hello";
+
+console.log(greeting);
+
+// So to make my learning more fun, I made one challenge below
+// Excercise: coffee shops order system
+
+const orderSize = true;
+
+const orderType = orderSize ? "$5" : "$3";
+
+console.log(orderType);
+
+
+
+const drink = "latte";
+
+switch (drink) {
+  case "espresso":
+    console.log("Total order is $7");
+    break;
+    case "latte":
+      console.log("Total otder is $8");
+      break;
+      case "cappuccino":
+        console.log("Total order is $9");
+        break;
+      default:
+        console.log("Total order is $6");
+}
+
+
+const customerOld = false;
+const customerStudent = true;
+
+if (customerOld) {
+  console.log("You will get 20% discount");
+} else if (customerStudent) {
+  console.log("You will get 10% discount");
+} else {
+  console.log("Sorry no discount for you");
+}
+
+const customerName = "";
+
+const customerDefault = customerName || "guest";
+
+console.log(customerDefault);
+
+const customerCoupon = "";
+
+const customerDiscount = customerCoupon && "10% off your order";
+
+console.log(customerDiscount);
