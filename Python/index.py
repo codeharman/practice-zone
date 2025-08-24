@@ -21,3 +21,13 @@ print (type("hello")) #string
 print (type(2)) #integer
 print (type(True)) #boolean
 print (type(1.24)) #float 
+
+# Variables and datatypes excercise
+# we run hardware store so we are going to put the items, name and price and how much on print
+
+itemName = 'Hammer'
+itemPrice = 10.50
+itemQuantity = 2
+
+print(str(itemName) + ' ' + str(itemPrice) + " " + str(itemQuantity))
+print(itemName, itemPrice, itemQuantity)
