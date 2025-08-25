@@ -54,3 +54,5 @@ answer5 = "Vous " + str(frenchWord)
 answer6 = "Ils/elles" + str(frenchWord)
 
 print(answer1, answer2, answer3, answer4, answer5, answer6)
+
+#next I learned the arthemetic opereators
