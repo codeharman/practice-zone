@@ -68,3 +68,19 @@ print('division : ', a / b)
 print('Modulus : ', a % b)
 print('exponent : ', a ** b)
 
+# I learned strings and slicing
+
+#Strings
+
+heading = "hey harman How are you?"
+
+print(heading.capitalize())
+print(heading.title())
+print(heading.lower())
+print(heading.count("Harman"))
+
+#slicing
+
+msg = "how are you"
+
+print (msg[2])
