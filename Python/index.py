@@ -56,3 +56,15 @@ answer6 = "Ils/elles" + str(frenchWord)
 print(answer1, answer2, answer3, answer4, answer5, answer6)
 
 #next I learned the arthemetic opereators
+#so i Will explain all the possible varients
+
+a = 4
+b = 6
+
+print('addition : ', a + b)
+print('substraction : ', a - b)
+print('Multiply : ', a * b)
+print('division : ', a / b)
+print('Modulus : ', a % b)
+print('exponent : ', a ** b)
+
