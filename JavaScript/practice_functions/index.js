@@ -1,10 +1,11 @@
 // Here I learned why we need functions at the first place
 
-function echo(input, greeting) {
-  return `${greeting} ${input}`;
+// I learned that functions has the scope inside it and outside that scopre it is not accessible
+
+name = "Harman"
+
+function hello() {
+  console.log(`${name} is a good`)
 }
 
-const result = echo(42, "hi");
-console.log(result);
-
- 
+hello()
