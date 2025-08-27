@@ -84,3 +84,37 @@ print(heading.count("Harman"))
 msg = "how are you"
 
 print (msg[2])
+
+# we use trip[le quotes for multiple lines
+
+harman = '''hey harman
+how are you
+i am fine'''
+
+print (harman)
+
+# we can use find to find the index and the replace to replace the words
+
+msg = 'Welcome to the python programming'
+
+#this is where we use the find function
+print(msg.find('python'))
+
+#this is where we use the replace function
+print(msg.replace('python', 'JavaScript'))
+
+# we can also verify the strings through true and fallse
+
+# the below one is true
+print("python" in msg)
+
+#the below one is false 
+print("python" not in msg)
+
+# I learned we can use the 'f to make the string more readable
+
+firstName = 'Harman'
+lastName = 'Singh'
+age = 25
+
+print(f'My name is {firstName.capitalize()} {lastName.capitalize()} and my age is {age}')
