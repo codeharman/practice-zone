@@ -111,10 +111,53 @@ print("python" in msg)
 #the below one is false 
 print("python" not in msg)
 
-# I learned we can use the 'f to make the string more readable
+# I learned we can use the f to make the string more readable
 
 firstName = 'Harman'
 lastName = 'Singh'
 age = 25
 
 print(f'My name is {firstName.capitalize()} {lastName.capitalize()} and my age is {age}')
+
+
+# I learned how to create the lists
+
+friends = ['Harman', 'Taploo', 'Nav']
+
+print(friends[1])
+print(friends[0:2])
+
+# I learned the sort and reverse function
+
+numbers = [3, 5, 1, 8, 2]
+numbers.sort()
+
+# I learned how to use the sum, max and min function
+
+print(sum(numbers))
+print(max(numbers))
+print(min(numbers))
+print(len(numbers))
+
+# Spliting and joining the lists
+
+#splitting function
+
+msg = "Welcome to the python programming"
+newMsg = msg.split(' ')
+print(newMsg)
+
+#joing function
+
+friends = ['Harman', 'Taploo', 'Nav']
+newFriends = 's'.join(friends)
+print(newFriends)
+
+#Tuples and they can't be changes 
+
+coordinates = [4, 5]
+newCoordinates = (4, 5)
+
+print(coordinates)
+print(newCoordinates)
+
