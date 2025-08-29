@@ -161,3 +161,13 @@ newCoordinates = (4, 5)
 print(coordinates)
 print(newCoordinates)
 
+# I learned funtions - calling, parameters, arguments, defaults
+
+#we use def to define the function
+
+def greetUser(name):
+    print(f'Hi {name}, How are you?')
+
+name = input('Enter your name: ')
+greetUser(name)
+
