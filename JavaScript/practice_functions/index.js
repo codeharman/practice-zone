@@ -40,3 +40,4 @@ decrement()
 
 // another thing I learned was the innerText property but again I don't have any html so I will learn it later
 
+// Also learned that functions only worked under the scope not outside of it
