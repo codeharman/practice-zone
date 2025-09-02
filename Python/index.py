@@ -207,3 +207,31 @@ print(a <= b)
 print(int(True))
 print(int(False))
 
+# Learned if, else and elif statements
+
+age = 18
+if age < 18:
+    print('You are a minor')
+else:
+    print('You are an adult')
+
+# elif statement
+age = 65
+if age < 18:
+    print('You are a minor')
+elif age >= 18 and age < 65:
+    print('You are an adult')
+else:
+    print('You are a senior citizen')
+    
+# if there is reptition in the code most of time it can be solved by while loops
+
+# we programmers are lazy people
+
+i=1
+
+while i<=5:
+    print(i)
+    i+=1
+
+    
