@@ -171,3 +171,39 @@ def greetUser(name):
 name = input('Enter your name: ')
 greetUser(name)
 
+## always comment the code to write clean code
+
+def greetUser(name='User'):
+    '''This function greets the user with the name provided'''
+    print(f'Hi {name}, How are you?')
+
+name = input('Enter your name: ') or "User"
+greetUser(name)
+
+# I learned the return statement
+# If we don't use the return statement the function will return None
+# which is equilvalent to null in other programming languages
+
+def goodsAndServiceTax(total):
+    gst = total * 0.13
+    return gst
+
+print(goodsAndServiceTax(100))
+
+# Comparison and boolean operators
+
+a = 8
+b = 8
+
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+
+# 0 = False, 1 = True
+
+print(int(True))
+print(int(False))
+
