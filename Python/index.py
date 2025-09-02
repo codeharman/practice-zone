@@ -234,4 +234,8 @@ while i<=5:
     print(i)
     i+=1
 
-    
+# I learned the for loops
+
+friends = ['Harman', 'Taploo', 'Nav']
+for friend in friends:
+    print(friend)
