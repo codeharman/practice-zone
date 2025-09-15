@@ -14,3 +14,35 @@ console.log(colors);
 console.log(colors.blue); // #00f
 console.log(colors.red); // #f60
 
+// I learned Primitives vs objects types
+// there are technically 6 primitive types in JS
+// string, number, boolean, null, undefined, symbol
+
+// primitives - passed by value
+
+let a = 3;
+let b = a;
+
+console.log(a === b); // true hence its passed by value
+
+b = 5;
+console.log(a, b);
+console.log(a === b); // false
+
+// objects - passed by reference
+
+const obj1 = {};
+const obj2 = {}; // obj2 is referencing the same object as obj1
+
+console.log(obj1 === obj2); // false hence its passed by reference
+
+// but even if one has value and other is reference to the same object
+
+const obj3 = obj1; // obj3 is referencing the same object as obj1
+
+console.log(obj1 === obj3); // true
+
+obj3.name = 'Harman'; // adding a key value pair to obj3
+
+console.log(obj1); // { name: 'Harman' } hence obj1 also has the key value pair as obj3 is referencing the same object as obj1
+console.log(obj3); // { name: 'Harman' }
