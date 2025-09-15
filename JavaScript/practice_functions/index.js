@@ -41,3 +41,43 @@ decrement()
 // another thing I learned was the innerText property but again I don't have any html so I will learn it later
 
 // Also learned that functions only worked under the scope not outside of it
+
+// We are learning the Closures and why it matters
+
+// eg like count
+
+let likes = 0;
+
+function addLike() {
+  likes += 1;
+  console.log(likes);
+}
+
+addLike();
+
+// but the var "let" can be changes as it is outside
+// the solution is to put inside the function
+
+function newLike() {
+  let likes = 0;
+  return function addlike() {
+    likes += 1;
+    return likes;
+  }
+}
+
+// we cannot invoke the newLike() because it will return the function addlike
+// not the value of likes, think like it is factory but needs to know the product (variable)
+// so we need to store it in a variable
+
+const actualLike = newLike();
+console.log(actualLike()); // 1
+console.log(actualLike()); // 2
+console.log(actualLike()); // 3
+
+// this is how closures works
+// the inner function has access to the outer function's variable even after the outer function has executed
+// this is useful for data encapsulation and creating private variables
+
+
+
