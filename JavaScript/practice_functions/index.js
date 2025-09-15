@@ -76,6 +76,7 @@ console.log(actualLike()); // 2
 console.log(actualLike()); // 3
 
 // this is how closures works
+// why we use it, to make the JS remember the values
 // the inner function has access to the outer function's variable even after the outer function has executed
 // this is useful for data encapsulation and creating private variables
 
