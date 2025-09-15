@@ -80,5 +80,25 @@ console.log(actualLike()); // 3
 // the inner function has access to the outer function's variable even after the outer function has executed
 // this is useful for data encapsulation and creating private variables
 
+// now we are learning the better functions with default parameters
+// we are making the weather converter app here
 
+function convertTemp(celsius) {
+  // celsius to fahrenheit
+  const temp = celsius * 1.8 + 32;
+  return Number(temp.toFixed(2)); // rounding to 2 decimal by using the toFixed method
+}
 
+console.log(convertTemp(21));
+
+// We are learning the shorter functions with the arrow functions
+// =>
+
+  const username = "Harman";
+
+  const greet = (name) => 
+    `Hello, My name is ${username}`
+
+  console.log(greet(username));
+
+// if there is only one parameter we can remove the parenthesis
