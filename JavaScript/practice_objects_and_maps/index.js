@@ -71,5 +71,10 @@ const user = {
 // We can extract by putting the following
 const {username, email} = user;
 
-// We do not need to put the object and key we can directly extract the key value pairs
-console.log(`Hi ${username} you have registered with email ${email}`);
+// We do not need to put the object and key we can directly extract the key value pairs using the function
+function callUser() {
+  console.log(`Hi ${username} you have registered with email ${email}`);
+}
+
+callUser(); // Hi harman you have registered with email
+
