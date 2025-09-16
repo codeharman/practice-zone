@@ -104,3 +104,33 @@ console.log(Object.assign({}, objA, objB, { city: 'New York' })); // Merging obj
 // The other easier way is to use the spread operator ... which is ES6 feature
 
 console.log({...objA, ...objB, country: 'USA'}); // Merging objA, objB and a new object into a new object
+
+// I learned about the Maps and WeakMaps in JS
+
+// Maps are a collection of keyed data items, just like an Object. 
+// But the main difference is that Map allows keys of any type.
+
+// Creating a map
+const hello = new Map([
+  [1, 1],
+  [true, true]
+]);
+
+console.log(hello.set("Harman", 20)); // A dding a key value pair to the map
+console.log(hello); // Full map
+
+// Getting the value of a key in a map
+console.log(hello.get(1)); // 1
+console.log(hello.get(true)); // true
+console.log(hello.get("Harman")); // 20
+
+// Checking if a key exists in a map
+console.log(hello.has(1)); // true
+console.log(hello.has(false)); // false
+
+// Deleting a key from a map
+console.log(hello.delete(1)); // true
+console.log(hello); // Full map without the key 1
+
+// Getting the size of a map
+console.log(hello.size); // 2
