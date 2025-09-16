@@ -46,3 +46,30 @@ obj3.name = 'Harman'; // adding a key value pair to obj3
 
 console.log(obj1); // { name: 'Harman' } hence obj1 also has the key value pair as obj3 is referencing the same object as obj1
 console.log(obj3); // { name: 'Harman' }
+
+// I also learned [] to access the value of a key in an object
+const key = {
+  ['light blue']: "#F0F8FF",
+  ['light red']: "#FFA07A"
+}
+
+console.log(key['light blue']); // #F0F8FF
+console.log(key['light red']); // #FFA07A
+console.log(key); // Full Answer
+
+// I learned the Object Destructuring
+
+// We are creating a social media and we want to store the 
+// user information in an object
+
+const user = {
+  username: "harman",
+  email: "name@email.com",
+  name: "Harman"
+}
+
+// We can extract by putting the following
+const {username, email} = user;
+
+// We do not need to put the object and key we can directly extract the key value pairs
+console.log(`Hi ${username} you have registered with email ${email}`);
