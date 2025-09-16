@@ -78,3 +78,29 @@ function callUser() {
 
 callUser(); // Hi harman you have registered with email
 
+// I learned about merge objects with the object.assign() method
+
+// object 1
+
+const objA = {
+  name: 'Harman'
+}
+
+const objB = {
+  age: 20
+}
+
+Object.assign(objA, objB); // Merging objB into objA
+
+console.log(objA); // { name: 'Harman', age: 20 }
+
+// so we need to put {} empty object as the first argument to not change objA
+console.log(Object.assign({}, objA, objB)); // Merging objA and objB into a new object
+
+// We can also put single object
+
+console.log(Object.assign({}, objA, objB, { city: 'New York' })); // Merging objA, objB and a new object into a new object
+
+// The other easier way is to use the spread operator ... which is ES6 feature
+
+console.log({...objA, ...objB, country: 'USA'}); // Merging objA, objB and a new object into a new object
