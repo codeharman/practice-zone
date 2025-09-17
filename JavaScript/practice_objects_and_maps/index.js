@@ -123,7 +123,7 @@ console.log(hello); // Full map
 console.log(hello.get(1)); // 1
 console.log(hello.get(true)); // true
 console.log(hello.get("Harman")); // 20
-
+ 
 // Checking if a key exists in a map
 console.log(hello.has(1)); // true
 console.log(hello.has(false)); // false
@@ -134,3 +134,18 @@ console.log(hello); // Full map without the key 1
 
 // Getting the size of a map
 console.log(hello.size); // 2
+
+// We learned Methods with Arrow Functions
+
+const userData = {
+  name: 'Harman',
+  age: 25,
+  // greet is a method function. bascially a function insdie the objects and write like this
+  // also we use the arrow function in order to get the this values from any scope of the objects 
+  greet() {
+    // Here this refers to the userData object
+    console.log(`Je m'appelle ${this.name} et j'ai ${this.age}`);
+  }
+}
+
+userData.greet(); // invoking or calling the method function 
