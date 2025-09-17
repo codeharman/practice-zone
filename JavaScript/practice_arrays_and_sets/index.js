@@ -107,5 +107,17 @@ const restaurants = [
 const results = restaurants.filter(restaurant => restaurant.name.startsWith('b'));
 console.log(results);
 
+// I learned .reduce and types like acc etc
 
+const menu = [
+  {item: 'burger', price: 20},
+  {item: 'pasta', price: 10},    
+  {item: 'noodle', price: 30},
+];
+
+const final = menu.reduce((acc, menu) => {
+  return acc + menu.price;
+}, 0);
+
+console.log(final)
 
