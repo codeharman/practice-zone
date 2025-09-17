@@ -92,3 +92,20 @@ console.log(oldTemp.map (oldTemp => {
       console.log(`The following person: ${he.married} is married`);
     }
   });
+
+// I learned the subsets of arrays
+// like to filter the things up
+
+const restaurants = [
+  {name: 'baro', location: 'Toronto'},
+  {name: 'king taps', location: 'Toronto'}
+];
+
+// here we use the filter to filter the array
+// Also we can use the find method to find the things particularly
+
+const results = restaurants.filter(restaurant => restaurant.name.startsWith('b'));
+console.log(results);
+
+
+
