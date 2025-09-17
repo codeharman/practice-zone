@@ -121,3 +121,12 @@ const final = menu.reduce((acc, menu) => {
 
 console.log(final)
 
+
+// I learne the .concat to avoid mutations
+
+const fruit = ['apple', 'orange'];
+
+const newFruits = fruit.concat('grapes');
+
+console.log(fruit);
+console.log(newFruits)
