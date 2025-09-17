@@ -56,3 +56,39 @@ const newTemp = [
 ];
 
 console.log(newTemp.some(newTemp => newTemp.isRecordHigh === true)); // .some tells us if there is one thing that is matching inside a given containers
+
+
+// but how can we update all the values, well we can use the map function
+
+const oldTemp = [
+  {temp: 77, isRecord: false},
+  {temp: 221, isRecord: true}
+];
+
+// we are using map here inside the function
+console.log(oldTemp.map (oldTemp => {
+  oldTemp.isRecord = true;
+  return oldTemp;
+})); // the result will come true for both
+
+// I also learned the ternaries basically the short form of if else
+
+  const he = [
+    {married: 'harman', status: false},
+    {married: 'john', status: true}
+  ];
+
+  const newHe = he.map (he => {
+    he.status === true ? {...he, message: 'congrats'} : he 
+    return he
+  });
+
+  console.log(newHe);
+
+  // .forEach we use to kind of make custom output
+
+  newHe.forEach(he => {
+    if (he.status) {
+      console.log(`The following person: ${he.married} is married`);
+    }
+  });
