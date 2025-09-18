@@ -160,3 +160,40 @@ const [winner, ...losers] = cars;
 
 console.log({ winner, losers });
 
+// Leanring how to turn objects into flexible arrays
+// For in Loop 
+
+const obj = { one: 1, two: 2};
+
+for (const key in obj) {
+  console.log('harman', obj[key])
+};
+
+// Object .values
+
+const user = {
+  name: 'harman',
+  age: 25
+};
+
+console.log(Object.values(user));
+
+// .enteries
+
+console.log(Object.entries(user));
+
+// below are all the features that are important
+
+// map()
+// filter()
+// reduce ()
+// some() / every ()
+// find() / findIndex()
+// forEach()
+
+// Plus:
+
+// slice()
+// concat()
+// includes()
+// array spread operator ...
