@@ -41,3 +41,24 @@ const car1 = new Car("bmw", 2001);
 const car2 = new Car('toyota', 2008);
 
 console.log(car1)
+
+// Let's understand now the prototype chain
+
+const a = Object.getPrototypeOf({});
+
+console.log(a)
+
+// Classes are the functions
+// they are shared behaviour methods
+
+class Finals {
+  constructor(id, name, subjects = []) {
+    this.id = id;
+    this.name = name;
+    this.subjects = subjects;
+  }
+  addSubject() {}
+};
+
+const final = new Finals(1, "harman", 'math');
+console.log(final.addSubject)
