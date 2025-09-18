@@ -130,3 +130,33 @@ const newFruits = fruit.concat('grapes');
 
 console.log(fruit);
 console.log(newFruits)
+
+// better way of more flexible arrays with destructing
+
+const menuItems = [
+  'Junior Chicken buger',
+  ' coke', 
+  'ice coffee'
+];
+
+// We can easily assign the names 
+const {first, second, third} = menuItems;
+
+console.log(menuItems);
+
+// we can also do the rest operator to distinguish
+
+const cars = [
+  'lamborghini',
+  'porsche',
+  'mercedez'
+];
+
+// ... is the rest operator here
+
+const [winner, ...losers] = cars;
+
+// the output
+
+console.log({ winner, losers });
+
