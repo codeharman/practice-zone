@@ -129,3 +129,31 @@ console.log(carType)
 console.log(carType.describe());      // This vehicle is a BMW with 4 wheels
 console.log(carType.describeFuel());
 
+// I learned the getters and setters
+
+class Club {
+  constructor(name, age) {
+    this.name = name;
+    this._age = age;
+  }
+
+  // get()
+  get age() {
+    return this._age;
+  }
+
+  // set()
+  set age(value) {
+    if (value < 0) {
+      console.log('Age cannot be negative');
+    } else {
+      this._age = value;
+    }
+  }
+};
+
+const user1 = new Club('Harman', 25)
+
+console.log(user1.age)
+
+
