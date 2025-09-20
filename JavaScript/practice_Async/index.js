@@ -72,3 +72,36 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
   .then(data => console.log(data)) // then we get the real result here
   .catch(error => console.error(error))
 
+// I learned Dead simple promises with asynce-await
+
+
+// async always return the promieses
+async function getPost() {
+   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');  
+   const data = await response.json();
+   console.log(data);
+}
+
+getPost();
+
+// Async and await excersize to learn from the CHATGPT
+
+async function getPost2() {
+  const post = await fetch('https://jsonplaceholder.typicode.com/posts/2');
+  const answer = await post.json();
+  console.log(answer);
+}
+
+async function getPostsSequential() {
+  const post1 = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  const post2 = await fetch('https://jsonplaceholder.typicode.com/posts/2');
+  const post3 = await fetch('https://jsonplaceholder.typicode.com/posts/3');
+  
+  const data1 = await post1.json();
+  const data2 = await post2.json();
+  const data3 = await post3.json();
+
+  console.log(data1);
+  console.log(data2);
+  console.log(data3);
+}
