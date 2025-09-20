@@ -42,3 +42,33 @@ promise.then(value => console.log(value)).catch(value => console.log(value));
 // when resolve is called .then() will work
 // when reject is called .catch() will work
 
+// Make Network Requests with the fetch()
+
+// API - application programming interface: software to communicate with other software
+// API - is helpful service
+
+// CRUD - how data is used commonly in applications
+
+// Create - post
+// read - get
+// update - put / patch method
+// delete - delete request
+
+// http://jsonplaceholder.typicode.com/posts
+
+// The data we will get is JSON - JS object notation
+// fetch()
+
+// documentation -> jsonplaceholder.typicode.com
+
+// we are making the GET request
+
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(response.status);
+    }
+  }) // remember if it is successfull .then we need to tell what data
+  .then(data => console.log(data)) // then we get the real result here
+  .catch(error => console.error(error))
+
