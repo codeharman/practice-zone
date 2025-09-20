@@ -105,3 +105,19 @@ async function getPostsSequential() {
   console.log(data2);
   console.log(data3);
 }
+
+getPostsSequential()
+
+// Try and Catch
+
+async function getPost3() {
+   try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');  
+   const data = await response.json();
+   console.log(data);
+  } catch (error) {
+    console.log("sorry error occured", error)
+  }
+}
+
+getPost3();
